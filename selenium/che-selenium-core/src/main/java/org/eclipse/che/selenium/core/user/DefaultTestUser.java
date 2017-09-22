@@ -30,8 +30,8 @@ public class DefaultTestUser implements TestUser {
   @Inject
   public DefaultTestUser(
       TestUserFactory userFactory,
-      @Named("che.user.email") String email,
-      @Named("che.user.password") String password)
+      @Named("default.test_user.email") String email,
+      @Named("default.test_user.password") String password)
       throws Exception {
     this.delegate = userFactory.create(email, password);
   }

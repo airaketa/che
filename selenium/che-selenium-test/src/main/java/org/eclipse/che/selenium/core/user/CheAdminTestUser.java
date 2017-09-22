@@ -23,8 +23,8 @@ public class CheAdminTestUser implements AdminTestUser {
   @Inject
   public CheAdminTestUser(
       TestUserFactory userFactory,
-      @Named("che.admin_user.email") String email,
-      @Named("che.admin_user.password") String password)
+      @Named("default.admin_user.email") String email,
+      @Named("default.admin_user.password") String password)
       throws Exception {
     this.delegate = userFactory.create(email, password);
   }

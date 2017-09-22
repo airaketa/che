@@ -24,8 +24,8 @@ public class TestAdminHttpJsonRequestFactory extends TestHttpJsonRequestFactory 
   @Inject
   public TestAdminHttpJsonRequestFactory(
       TestAuthServiceClient authServiceClient,
-      @Named("che.admin_user.email") String adminName,
-      @Named("che.admin_user.password") String adminPassword) {
+      @Named("default.admin_user.email") String adminName,
+      @Named("default.admin_user.password") String adminPassword) {
     this.adminName = adminName;
     this.adminPassword = adminPassword;
     this.authServiceClient = authServiceClient;
